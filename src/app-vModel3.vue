@@ -8,7 +8,7 @@
 </template>
  
 <script>
-import ParentComponent from "./vmodel3/ParentComponent.vue";
+import ParentComponent from "./vmodel1/ParentComponent.vue";
 export default {
   name: "App",
   components: {
