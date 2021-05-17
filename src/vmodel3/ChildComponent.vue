@@ -2,9 +2,7 @@
 <template>
   <div class="child">
     <p>我是儿子，父亲对我说： {{ value }}</p>
-    <a href="javascript:;" rel="external nofollow" @click="returnBackFn"
-      >回应</a
-    >
+    <div class="button" @click="returnBackFn">回应</div>
   </div>
 </template>
 <script>
@@ -14,8 +12,14 @@ export default {
   },
   methods: {
     returnBackFn() {
+      // div没有input也 emit input
       this.$emit("input", "还你200块");
     },
   },
 };
 </script>
+<style scoped>
+.button {
+  cursor: pointer;
+}
+</style>
